@@ -84,7 +84,8 @@ export default {
 
 <style lang="scss">
 .header-left-side {
-  background-color: rgba(0, 0, 0, 0.85);
+  // background-color: rgba(0, 0, 0, 0.85);
+  background-image: linear-gradient(300deg, rgba(0, 0, 0, 0.85) 70%, rgba(0, 0, 0, 0.83));
 
   & .material-icons {
     font-size: 1rem;
