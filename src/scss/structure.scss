@@ -1,0 +1,21 @@
+$w-left-side: 65%;
+
+.padding-sides {
+  padding: 5rem;
+}
+
+.base-dash {
+  height: 100vh;
+
+  & .left-side {
+    width: $w-left-side;
+    height: 100%;
+    // @extend .padding-sides;
+  } 
+
+  & .right-side {
+    width: calc(100% - #{$w-left-side});
+    height: 100%;
+    @extend .padding-sides;
+  }
+}

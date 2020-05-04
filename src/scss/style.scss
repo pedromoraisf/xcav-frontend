@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800&display=swap');
+$font-primary: 'Raleway', sans-serif;
+
+
+#app {
+  font-family: $font-primary !important;
+}
+
+.outline-none {
+  outline: none !important;
+}
+
+button {
+  @extend .outline-none;
+}
+
 .shadow-ghost {
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06) !important;
 }
@@ -16,3 +32,4 @@
     backdrop-filter: blur(0.4rem);
   }
 }
+
