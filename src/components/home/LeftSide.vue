@@ -20,7 +20,7 @@
       <swiper ref="swiper-container" :options="swiperOptions" class="small-slide">
         <swiper-slide class="py-5 pl-2 w-auto" v-for="doc in docOptions" :key="doc.id">
           <vs-button
-            @click.prevent="activeSelection = doc.link"
+            @click.prevent="docSelection(doc)"
             :floating="doc.disable ? false : true"
             class="doc-select p-3 text-left d-flex justify-content-start"
             :color="doc.disable ? `rgb(149, 198, 248)` : `#449EF8`"
@@ -29,6 +29,16 @@
           </vs-button>
         </swiper-slide>
       </swiper>
+    </section>
+
+    <section v-if="selection.doc !== 0">
+      <div v-if="selection.disable" class="text-center">
+        <h5 v-html="`O documento selecionado não esta disponível para extração no momento`" />
+      </div>
+
+      <div v-else-if="!selection.disable">
+        
+      </div>
     </section>
   </div>
 </template>
@@ -41,7 +51,10 @@ import { swiper, swiperSlide } from "vue-awesome-swiper";
 
 export default {
   data: () => ({
-    activeSelection: 0,
+    selection: {
+      doc: 0, 
+      disable: 0
+    },
     docOptions: [
       {
         name: "Extrato de Investimento",
@@ -78,6 +91,12 @@ export default {
     Search,
     swiper,
     swiperSlide
+  }, 
+  methods: {
+    docSelection(doc) {
+      this.selection.doc = doc.link
+      this.selection.disable = doc.disable
+    }
   }
 };
 </script>
