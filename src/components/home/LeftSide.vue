@@ -103,7 +103,6 @@ export default {
 .doc-select {
   width: 200px;
   text-align: left !important;
-  font-size: 1.5rem;
   font-weight: bold;
 }
 
