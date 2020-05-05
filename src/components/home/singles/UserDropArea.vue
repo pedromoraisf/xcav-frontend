@@ -18,7 +18,7 @@
       >
         <div class="dropzone-custom-content">
           <h4 class="dropzone-custom-title font-weight-bold font-primary text-secondary">
-            <span class="material-icons" style="font-size: 4rem" v-html="`cloud_queue`" />
+            <span class="material-icons" style="font-size: 3rem" v-html="`cloud_queue`" />
           </h4>
         </div>
       </vue-dropzone>
