@@ -23,6 +23,5 @@ $w-left-side: 65%;
   & .right-side {
     width: calc(100% - #{$w-left-side});
     height: 100%;
-    @extend .padding-sides;
   }
 }

@@ -8,7 +8,7 @@
       <vue-dropzone
         @vdropzone-sending="commitSetterFileState({ state: 1, data: `` })"
         @vdropzone-removed-file="commitSetterFileState({ state: 0, data: `` })"
-        @vdropzone-success="(file, response) => commitSetterFileState({ state: 2, data: response })"
+        @vdropzone-success="(file, response) => commitSetterFileState({ state: 2, data: response.data })"
         @vdropzone-error="openNotification(`bottom-left`, `danger`, `Ops...`, `Ocorreu um erro na operação 👎🏽`)"
         class="big-rounded animated fadeIn faster"
         ref="myVueDropzone"
