@@ -1,7 +1,7 @@
 <template>
   <div>
     <vs-input
-      placeholder="Realize uma busca..."
+      placeholder="Buscar por documento..."
       v-model="value"
     />
   </div>
