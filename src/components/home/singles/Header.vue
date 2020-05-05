@@ -1,5 +1,9 @@
 <template>
-  <header class="header-left-side padding-sides">
+  <header class="header-left-side padding-header-left-side">
+    <div class="mb-5 text-center">
+      <img width="70" :src="require(`@/assets/images/logo.png`)" />
+    </div>
+
     <div class="d-flex justify-content-between">
       <h5 class="font-weight-bold text-white" v-html="`Extrator de Dados`" />
 
