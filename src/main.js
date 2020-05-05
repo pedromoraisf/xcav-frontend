@@ -10,6 +10,7 @@ Vue.use(BootstrapVue)
 
 import 'vuesax/dist/vuesax.css'
 import './scss/orchestrator.scss'
+import 'animate.css/animate.css'
 
 Vue.config.productionTip = false
 

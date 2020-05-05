@@ -6,6 +6,10 @@ $font-primary: 'Muli', sans-serif;
   font-family: $font-primary !important;
 }
 
+.font-primary {
+  font-family: $font-primary !important;
+}
+
 .outline-none {
   outline: none !important;
 }
@@ -33,3 +37,6 @@ button {
   }
 }
 
+.big-rounded {
+  border-radius: 1.25rem !important;
+}
