@@ -16,7 +16,7 @@
       </div>
     </div>
 
-    <search class="mt-5" />
+    <search class="mt-4" />
   </header>
 </template>
 
